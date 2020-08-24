@@ -8,28 +8,29 @@ class App extends Component {
     todos: [
       {
         id: 1,
-        titile: 'Take out the trash',
+        title: 'Take out the trash',
         completed: false
       },
       {
         id: 2,
-        titile: 'Dinner',
+        title: 'Dinner',
         completed: false
       },
       {
         id: 3,
-        titile: 'Meeting',
+        title: 'Meeting',
         completed: false
       }
     ]
   }
 
   render(){
-  return (
-    <div className="App">
-      <Todos />
-    </div>
-  );
+    
+    return (
+      <div className="App">
+        <Todos todos={this.state.todos}/>
+      </div>
+    );
   }
 }
 
